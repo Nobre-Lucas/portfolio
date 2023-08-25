@@ -2,6 +2,10 @@ ul {
     list-style: none;
 }
 
+h1, h2, p, a {
+    font-family: 'Roboto';
+}
+
 html,
 body {
     height: 100%;
@@ -16,9 +20,11 @@ body {
 
 /* Style the header with a grey background and some padding */
 header {
+    position: fixed;
     overflow: hidden;
     background-color: #f1f1f1;
     padding: 20px 10px;
+    width: 100%;
 }
 
 /* Style the header links */
@@ -46,7 +52,7 @@ header a.active {
 }
 
 /* Float the link section to the right */
-.header-right {
+.nav {
     float: right;
 }
 
