@@ -188,11 +188,23 @@ footer a.active {
     color: white;
 }
 
-.experiencia__list {
+.apresentacao__board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.apresentacao__img {
+    align-self: center;
+    margin-top: 2em;
+    max-width: 100%;
+}
+
+.experiencia__list, .projetos__list {
     padding: 0;
 }
 
-.experiencia__item {
+.experiencia__item, .projetos__item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,8 +214,8 @@ footer a.active {
     padding: 2rem 1rem 2rem 1rem;
 }
 
-.experiencia__img {
-    width: 45%;
+.experiencia__img, .projetos__img {
+    max-width: 45%;
     margin-bottom: 2em;
 }
 
@@ -231,14 +243,24 @@ footer a.active {
 
     }
 
-    .experiencia__list {
+    .apresentacao__board {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .apresentacao__img {
+        align-self: center;
+        max-width: 65%;
+    }
+
+    .experiencia__list, .projetos__list {
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50%);
     }
     
-    .experiencia__img {
-        width: 50%;
+    .experiencia__img, .projetos__img {
+        max-width: 50%;
         margin-bottom: 2em;
     }
 
