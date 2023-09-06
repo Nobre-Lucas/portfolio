@@ -3,6 +3,10 @@
     scroll-margin-top: 15rem;
 }
 
+.skills a {
+    text-decoration: underline
+}
+
 .skills .skills__content {
     padding: 6rem 4rem;
     text-align: center;
