@@ -1,117 +1,252 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucas Nobre Barbosa</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto:wght@100;400&display=swap"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Portfólio do Desenvolvedor de Software Lucas Nobre Barbosa, incluindo seus projetos, conhecimentos 
+        de linguagem de programação e links para suas redes sociais">
+    <!-- Title -->
+    <title>NobreLucas Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/extends.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
 
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#apresentacao">Apresentação</a></li>
-                <li><a class="menu__item" href="#projetos">Projetos</a></li>
-                <li><a class="menu__item" href="#experiencia">Experiência</a></li>
-                <li><a class="menu__item" href="#educacao">Educação</a></li>
-                <li><a class="menu__item" href="#contatos">Contatos</a></li>
+    <!-- Navbar -->
+    <navbar class="navbar">
+        <div class="navbar__content max-width mb-0">
+            <a href="#">
+                <img src="assets/lucas-nobre-logo.svg" alt="">
+            </a>
+            <ul class="navbar__links">
+                <li><a href="#header">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#footer">Contato</a></li>
             </ul>
-        </div>
-        <div class="nav">
-            <nav>
-                <a href="#apresentacao">Apresentação</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#experiencia">Experiência</a>
-                <a href="#contatos">Contatos</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div id="apresentacao" class="apresentacao container">
-            <h2 class="apresentacao__title">Lucas Nobre Barbosa</h2>
-            <div class="apresentacao__board">
-                <h3 class="apresentacao__role">Desenvolvedor de Software</h3>
-                <img class="apresentacao__img" src="imgs/developer.png" alt="Desenho de um Desenvolvedor de Software">
+            <div class="navbar__mobile">
+                <img src="assets/menu.svg" alt="abrir menu hambúrguer" class="burguer">
+                <ul class="mobile__links">
+                    <li><a href="#header">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                </ul>
             </div>
         </div>
-        <div id="projetos" class="projetos container">
-            <h2>Projetos</h2>
-            <ul class="projetos__list">
-                <li class="projetos__item">
-                    <img src="imgs/portfolio_icon.png"
-                        alt="ícone de um computador com engrenagens ao redor representando desenvolvimento de software"
-                        class="projetos__img">
-                    <h3 class="projetos__name">Portfólio</h3>
-                    <p><strong>Tecnologias: </strong>HTML e CSS</p>
+    </navbar>
+
+
+    <!-- Header -->
+    <header id="header" class="max-width">
+        <div class="header__left">
+            <h1>Olá! Sou Lucas Nobre Barbosa, Desenvolvedor de Software</h1>
+            <p>
+                Estudante de Ciência da Computação quase se formando na Universidade do Pará, atualmente estagiando no
+                Tribunal de Justiça do Estado do Pará como Desenvolvedor de Software, tendo anos de experiência em
+                programação,
+                com ênfase em Inteligência Artificial e Desenvolvimento Web.
+
+            </p>
+            <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+        </div>
+        <div class="header__right">
+            <div class="header__image">
+                <img src="assets/generic-profile.png" alt="Foto do desenvolvedor, Lucas Nobre" class="lucas">
+                <img src="assets/abstract.svg" alt="" class="background">
+            </div>
+        </div>
+    </header>
+
+    <!-- About-->
+    <section id="about" class="about max-width">
+        <div class="about__left">
+            <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+            <p>
+                Sou um homem com atualmente 22 anos, que tem como hobby video-games, literatura, criação de mundos de
+                fantasia,
+                jogos de tabuleiro e de cartas e a prática de exercícios físicos. Tenho uma rottweiler que eu amo muito
+                chamada
+                Nanda que tá sempre do meu lado.
+            </p>
+        </div>
+        <div class="about__right">
+            <h3 class="tertiary-title mb-m">
+                Desenvolvedor de Software apaixonado por ciência e tecnologia.
+            </h3>
+            <p>
+                Desde o ensino médio a ciência ocupa boa parte da minha vida, eu era apaixonado por física e matemática,
+                o que me impulsionou a descobrir coisas novas e, dentre elas, a programação. Desde então essa área tem
+                feito parte da minha vida também.
+            </p>
+            <p>
+                Hoje estou quase formado e tenho 4 anos de experiência programando em projetos práticos da academia e do
+                mercado de trabalho, com ênfase em projetos de Inteligência Artificial e de Desenvolvimento Web. Entre
+                as
+                minhas principais conquistas está o Prêmio PIBIC Verão, que ganhei pelo destaque da minha pesquisa de
+                Iniciação Científica em Eficiência Energética em Redes de Computadores na graduação.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="skills__content max-width">
+            <h2 class="tertiary-title">Minha caixa de ferramentas</h2>
+            <p class="description">
+                Aqui quero apresentar minhas principais habilidades no mundo da programação, de forma direta e sucinta.
+                Para mais detalhes, por favor verifique a sessão <a href="#projects">Projetos em Destaque.</a>
+            </p>
+            <ul>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="assets/artificial-intelligence.png" alt="">
+                    </div>
+                    <h3>Inteligência Artificial</h3>
+                    <p>
+                        Experiência com as bibliotecas Scikit-learn, Flower e Tensor-flow, em projetos de eficiência
+                        energética, predição
+                        de consumo de recursos de rede, predição de consumo energético em ambientes domésticos e
+                        indexação e agrupamento de
+                        acórdãos oficiais.
+                    </p>
                 </li>
-                <li class="projetos__item">
-                    <img src="imgs/work_in_progress_icon.png"
-                        alt="ícone de um computador com engrenagens ao redor representando desenvolvimento de software"
-                        class="projetos__img">
-                    <h3 class="projetos__name">Gerenciador de Coleções</h3>
-                    <p><strong>Tecnologias: </strong>Python e Flask</p>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="assets/notebook.png" alt="">
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>
+                        Experiência em projetos web back-end usando Java com framework Quarkus, Python com framework
+                        Flask, projetos front-end com HTML,
+                        CSS e JavaScript puros. Começando minha jornada com o framework Vue.JS e a linguagem TypeScript.
+                    </p>
+                </li>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="assets/data-analysis.png" alt="">
+                    </div>
+                    <h3>Análise de Dados</h3>
+                    <p>
+                        Experiência em tratamento e análise de dados usando Python, Pandas, Seaborn e Matplotlib para
+                        análise de resultados científicos,
+                        tomada de decisão em projetos de precificação de imóveis e avaliação de modelos de Machine
+                        Learning (regressão e clusterização).
+                    </p>
+                </li>
+                <li class="skills__item">
+                    <div class="image-container">
+                        <img src="assets/files.png" alt="">
+                    </div>
+                    <h3>Gerenciamento de Versões</h3>
+                    <p>
+                        Experiência contribuindo em projetos de Código Aberto no Github, incluindo a manutenção de
+                        projetos pessoais, e projetos de mercado,
+                        trabalhando com grandes times usando Gitlab, em ambientes acadêmicos e de mercado de trabalho.
+                    </p>
                 </li>
             </ul>
         </div>
-        <div id="experiencia" class="experiencia container">
-            <h2 class="experiencia__title">Experiência</h2>
-            <ul class="experiencia__list">
-                <li class="experiencia__item">
-                    <img src="imgs/software_development_icon.png"
-                        alt="ícone de um computador com engrenagens ao redor representando desenvolvimento de software"
-                        class="experiencia__img experiencia__tjpa">
-                    <h3 class="experiencia__place">TJPA</h3>
-                    <p><strong>Papel: </strong>Estagiário em Desenvolvimento de Software</p>
-                    <p><strong>Principal Atribuições</strong></p>
-                    <ul>
-                        <li class="experiencia__role">Avaliação de Modelos de Machine Learning</li>
-                        <li class="experiencia__role">Prototipação de algoritmos de Machine Learning</li>
-                        <li class="experiencia__role">Desenvolvimento de APIs REST usando Java e Quarkus</li>
-                        <li class="experiencia__role">Estilização de páginas Web com HTML, CSS e JavaScript</li>
-                    </ul>
-                </li>
-                <li class="experiencia__item">
-                    <img src="imgs/computer_network_icon.png"
-                        alt="ícone de computadores conectados representando uma rede de computadores"
-                        class="experiencia__img experiencia__gercom">
-                    <h3 class="experiencia__place">GERCOM</h3>
-                    <p><strong>Papel: </strong>Pesquisador Junior</p>
-                    <p><strong>Principal Atribuições</strong></p>
-                    <ul>
-                        <li class="experiencia__role">Pesquisa sistemática na literatura científica</li>
-                        <li class="experiencia__role">Análise de Dados com Python</li>
-                        <li class="experiencia__role">Desenvolvimento de Algoritmos de IA com Scikit-learn</li>
-                        <li class="experiencia__role">Programação de Sistemas Embarcados em C e em Java</li>
-                    </ul>
-                </li>
-            </ul>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="projects max-width">
+        <div class="projects__contents">
+            <h2 class="secondary-title">Projetos em Destaque</h2>
+            <p>
+                Conheça aqui, em detalhes, alguns dos principais projetos desenvolvidos durante a minha carreira em
+                tecnologia.
+            </p>
         </div>
-    </main>
-    <footer>
-        <nav id="contatos">
-            <a id="github" href="https://github.com/Nobre-Lucas" target="_blank">Github</a>
-            <a id="linkedin" href="#">LinkedIn</a>
-            <a id="email" href="#">Email</a>
-        </nav>
+        <ul>
+            <li>
+                <div class="image">
+                    <img src="assets/portfolio_landing_page.png" alt="captura de tela do header do site">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Portfólio Web</h3>
+                    <p>
+                        Esse site mesmo, que você está explorando agora. Usei como tecnologias para construir ele HTML,
+                        CSS e JavaScript
+                        puros. Estou atualmente trabalhando em uma versão do mesmo site usando o framework Vue.JS 3.
+                    </p>
+                    <a href="#">Confira &rarr;</a>
+                </div>
+            </li>
+            <li class="projects__reversed-list">
+                <div class="image">
+                    <img src="assets/pasta-com-documentos.jpeg" alt="imagem ilustrativa de uma coleção de documentos">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Gerenciador de Coleções</h3>
+                    <p>
+                        Projeto feito para gerenciar minhas coleções, desde coleções físicas de jogos de cartas e de
+                        tabuleiro até coleções
+                        de itens virtuais em jogos online. A principal tecnologia usada é o framework Flask da linguagem
+                        Python. O projeto
+                        está em processo de desenvolvimento e seu código é aberto.
+                    </p>
+                    <a href="https://github.com/Nobre-Lucas/colecao-card-games" target="_blank"
+                        rel="noopener noreferrer">Confira &rarr;</a>
+                </div>
+            </li>
+            <li>
+                <div class="image">
+                    <img src="assets/pomodoro-timer.jpg" alt="imagem ilustrativa de um cronometro pomodoro">
+                </div>
+                <div class="projects__info">
+                    <h3 class="tertiary-title">Pomodoro Dev</h3>
+                    <p>
+                        Pomodoro é uma técnica de gerenciamento de tempo que visa melhorar a concentração e a
+                        produtividade de quem a usa.
+                        Existem diversos sites que implementam essa técnica, mas nenhum tem como foco o público
+                        desenvolvedor. Nesse
+                        projeto, além do contador padrão em qualquer pomodoro, também vou implementar o tracking de
+                        algumas estatísticas
+                        para o programador, como linguagem usadas no período, períodos de foco no ano, etc.
+                    </p>
+                    <a href="#">Confira &rarr;</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer__content max-width mb-0">
+            <h2 class="tertiary-title mb-s">Entre em contato comigo</h2>
+            <p class="mb-m">
+                Estou disponível para trabalhos de freelancer e para vagas de emprego. Se você quiser um site igual esse
+                para divulgar seu Portfólio pode entrar em contato comigo também. Até mais.
+            </p>
+            <div class="footer__contact mb-m">
+                <span class="mb-m">lucasbnobre18@gmail.com</span>
+                <span>+55 (91) 98374-6262</span>
+            </div>
+            <ul class="mb-l">
+                <li><a href="#"><img src="assets/instagram.svg" alt="link para Instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-nobre-barbosa/" target=”_blank”><img src="assets/linkedin.svg" alt="link para LinkedIn"></a></li>
+                <li><a href="https://github.com/Nobre-Lucas" target=”_blank”><img src="assets/github.svg" alt="link para Github"></a></li>
+            </ul>
+            <p class="footer__copyright">
+                © 2023 Lucas Nobre Barbosa. Todos os direitos reservados.
+            </p>
+        </div>
     </footer>
+
+
+    <!-- Script -->
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
