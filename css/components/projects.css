@@ -29,6 +29,7 @@
     min-width: 40rem;
     max-width: 47rem;
     height: auto;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .projects ul li .projects__info {
